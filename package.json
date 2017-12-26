@@ -1,0 +1,37 @@
+{
+  "name": "tmux-status-daemon",
+  "version": "0.1.0",
+  "description": "Daemon for Tmux",
+  "main": "lib/index.js",
+  "bin": {
+    "tmuxstatusd": "bin/tmuxstatusd"
+  },
+  "keywords": [
+    "daemon",
+    "tmux"
+  ],
+  "author": {
+    "name": "Aleksandr Krivoshchekov",
+    "email": "SuperPaintmanDeveloper@gmail.com",
+    "url": "https://superpaintman.com/"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib/",
+    "bin/",
+    "extra/"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "co": "4.6.0",
+    "execa": "0.8.0",
+    "moment": "2.20.1",
+    "pify": "3.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuperPaintman/tmux-status-daemon.git"
+  }
+}
