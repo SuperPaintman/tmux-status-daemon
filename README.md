@@ -28,7 +28,8 @@ This daemon listens to the `/tmp/tmux-status.sock` Unix socket.
 You can check this (via the `netcat` for example):
 
 ```sh
-$ echo "right" | nc -U /tmp/tmux-status.sock
+# <position> <whoami>
+$ echo "right" "$(whoami)" | nc -U /tmp/tmux-status.sock
 ```
 
 And you will see:
@@ -52,7 +53,7 @@ $ systemctl start tmuxstatusd
 Add the following line into your `~/.tmux.conf`:
 
 ```sh
-set -g status-right '#(echo "right" | nc -U /tmp/tmux-status.sock)'
+set -g status-right '#(echo "right" "$(whoami)" | nc -U /tmp/tmux-status.sock)'
 ```
 
 And then you will see this:
