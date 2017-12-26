@@ -55,7 +55,7 @@ Add the following line into your `~/.tmux.conf`:
 set -g status-right '#(echo "right" | nc -U /tmp/tmux-status.sock)'
 ```
 
-And then you will see that:
+And then you will see this:
 
 ![Screenshot][screenshot-image]
 
